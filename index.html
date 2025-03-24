@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝可梦图鉴大全（第1-8世代）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> 宝可梦全世代图鉴</h1>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="输入名称/编号/属性搜索...">
+            <select id="genFilter">
+                <option value="all">全部世代</option>
+                <option value="1">第一世代</option>
+                <!-- 其他世代选项 -->
+            </select>
+        </div>
+
+        <table id="pokedexTable">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>图像</th>
+                    <th>名称</th>
+                    <th>属性</th>
+                    <th>特性</th>
+                    <th>身高/体重</th>
+                    <th>技能</th>
+                    <th>进化链</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 数据由JavaScript动态加载 -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="data.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+
+</body>
+</html>

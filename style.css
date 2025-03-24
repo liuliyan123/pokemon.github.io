@@ -1,0 +1,53 @@
+/* 宝可梦主题配色 */
+:root {
+  --primary-red: #FF0000;
+  --primary-blue: #3B4CCA;
+  --accent-yellow: #FFDE00;
+  --light-gray: #F0F0F0;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-display: block;
+  background: var(--light-gray);
+  margin: 0;
+  padding: 20px;
+}
+
+#pokedexTable th {
+  background: var(--primary-blue);
+  color: white;
+  padding: 15px;
+  min-width: 120px;
+  will-change: transform;
+  backface-visibility: hidden;
+  text-align: left;
+}
+
+#pokedexTable td {
+  padding: 12px;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+#pokedexTable tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+.sprite {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  #pokedexTable th {
+  white-space: nowrap;
+  min-width: 80px;
+  padding: 12px 8px;
+}
+}
